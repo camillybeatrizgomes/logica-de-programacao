@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var usuarios = [
+            {nome: 'Camilly', idade: 19},{nome: 'Viviane', idade: 41},{nome: 'Laís', idade: 12},{nome: 'Mirian', idade: 61}
+        ];
+        usuarios
+            console.log(usuarios[1].idade)
+
+        var usuario = {posicao: 0, get atual (){
+            return usuarios[this.posicao]
+        },set atual (posicao){
+            this.posicao = posicao;
+        }, proximo (){
+            ++this.posicao;
+        }, anterior (){
+            --this.posicao;
+        }
+    }
+           console.log(usuario.atual)
+           usuario.proximo();
+           console.log(usuario.atual)
+           usuario.proximo();
+           console.log(usuario.atual);
+           usuario.anterior();
+           console.log(usuario.atual);
+           usuario.atual = 2;
+           console.log(usuario.atual);
+        
+    </script>
+</body>
+</html>
