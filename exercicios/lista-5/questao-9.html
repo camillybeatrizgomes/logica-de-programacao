@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nomes = []
+       var compras = []
+       while(nome != ''){
+           var nome = prompt("Digite seu nome");
+           nomes.push(nome);
+           var compra = parseInt(prompt("Digite o valor das suas compras: "));
+           compras.push(compra)
+        }for(var i = 0; i < nomes.length -1; i++){
+            if(compras[i] < 1000){
+               compras[i] = (compras[i]*10)/100
+                
+            }else{
+                compras[i] = (compras[i]*15)/100
+            }
+        
+        document.write("Nome: ", nomes[i], " | bônus: R$", compras[i], "<br>")
+        }
+        console.log(nomes)
+        console.log(compras)
+    </script>
+</body>
+</html>

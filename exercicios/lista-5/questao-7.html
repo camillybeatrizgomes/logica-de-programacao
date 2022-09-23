@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var codigo1 = 0;
+        var codigo2 = 0;
+        var codigo3 = 0;
+        var contador = []
+        do{
+         var idade = parseInt(prompt("digite sua idade"))
+         var opiniao = parseInt(prompt("Digite 1-regular, 2-bom ou 3-otimo"))
+            contador.push(opiniao)
+            switch(opiniao){
+                    case 1:
+                    var codigo1=codigo1+1
+                    break;
+                    case 2:
+                        var codigo2=codigo2+1
+                        break;
+                        case 3:
+                            var codigo3=codigo3+1
+                            break;
+                            default: 
+                            alert("OPCAO INVALIDA")
+                }
+        }while (opiniao != 4 )
+            document.write("Pessoas que acharam o filme Regular: ",codigo1)
+            document.write('<br>')
+            document.write("Pessoas que acharam o filme Bom: ",codigo2)
+            document.write('<br>')
+            document.write("Pessoas que acharam o filme Ótimo: ",codigo3)
+            console.log(codigo1)
+            console.log(codigo2)
+            console.log(codigo3)
+            console.log(contador)
+            
+    </script>
+</body>
+</html>

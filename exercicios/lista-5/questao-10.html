@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var contador = 1;
+        var nome_arquivo = []
+        var ficha = prompt("quantas fichas vão ser distribuidas?")
+        for (var i = 0;i < ficha;i++){
+            var nome = prompt("digite o nome do paciente")
+            nome_arquivo.push(nome)
+            console.log(nome_arquivo[i]+" | "+"Ficha: ",contador++)
+            document.write("Nome: ",nome," | ","Ficha: "+(i+1))
+            document.write('<br>')
+        }
+    </script>
+</body>
+</html>
