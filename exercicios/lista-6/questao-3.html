@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var dados = []
+       do{
+        var nome = prompt("digite seu nome")
+        var compra = parseFloat(prompt("digite o valor das compras no ano passado"))
+        dados.push([nome,compra]);
+       }while (nome != '');
+       for (var i = 0; i<dados.length-1;i++){
+        if(dados[i][1]<1000){
+            dados[i][1] = dados[i][1]*10/100
+        }else{
+            dados[i][1] = dados[i][1]*15/100
+        }
+        document.write("Olá, "+dados[i][0]+"! você recebeu "+dados[i][1].toFixed(2)+"% de bônus!"+"<br>")
+       }
+       console.log(dados)
+    </script>
+</body>
+</html>

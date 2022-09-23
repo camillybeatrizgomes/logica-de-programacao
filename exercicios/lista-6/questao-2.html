@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var soma = 0;
+        var soma_regular =0;
+        var i =0;
+        var i2 =0;
+        var contador_bom =0;
+        var dados = []
+            
+        
+
+
+         while(op != 4){
+        var op = parseInt(prompt("Digite sua opinião: 1- regular, 2- bom, 3- otimo")) 
+                if(op == 4){
+                    break;
+                    }
+        var idade = parseInt(prompt("Digite sua Idade: "))
+         dados[0] = [idade, op];  
+                    if(op == 3){
+                    soma = soma + idade
+                    i++
+                    
+                }else if(op == 1){
+                    soma_regular = soma_regular + idade
+                    i2++
+                }
+                
+          
+                
+        for(var j =0; j <= dados.length; j++){
+            if(dados[0][j] == 3 ){
+                var media = soma/i
+               
+
+            }else if(dados[0][j] == 2){
+                contador_bom++
+            
+
+            }else if(dados[0][j] == 1){
+                var media_regular = soma_regular/i2
+                
+            }
+          
+            }
+         }
+        
+        console.log("Média de Otimo: ",media)
+
+       console.log("Quantidade pessoas: ",contador_bom)
+
+       console.log("Média de Regular: ",media_regular)
+           
+    </script>
+</body>
+</html>

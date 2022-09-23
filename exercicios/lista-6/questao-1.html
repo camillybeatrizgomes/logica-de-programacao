@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        var gabarito = ['A','C','E','B','D','B','B','C','A','E']
+        var respostas = []
+
+        for(var i = 0; i < gabarito.length; i++){
+            var perguntas =prompt((i+1)+"º questão, responda de A a E")
+        respostas.push([perguntas])
+            if(respostas[i][0] == gabarito[i]){
+                respostas[i].push(1);
+            }else{
+                respostas[i].push(0);
+            }
+            
+        
+        document.write("Respostas do usuario: ",respostas[i][0],"<br>")
+        document.write("Pontuação em cada questão: ",respostas[i][1]+"<br>")
+        document.write("Gabarito oficial: ",gabarito[i],"<br>")
+        }
+        console.log(respostas)
+        console.log(gabarito)
+    </script>
+</body>
+</html>

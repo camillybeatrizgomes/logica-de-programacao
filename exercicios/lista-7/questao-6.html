@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valores = [12,24,6,32,46,23,52,60];
+            function procurar(valor){
+              var busca =  valores.indexOf(valor)
+                if(busca < 0){
+                    document.write("Valor não encontrado ")
+                }else{
+                    document.write("Valor existe e está na posição "+busca)
+                }
+            }
+
+      var usuario = parseInt(prompt("Digite o valor pra procurar"));
+     procurar(usuario)
+
+    </script>
+</body>
+</html>

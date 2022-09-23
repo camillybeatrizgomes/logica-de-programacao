@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function jogador(
+        nome, time, idade, aceleracao, velocidade, finalização, forca_chute, chute_longo, penaltis, visao, cruzamentos, agilidade, equilibrio, dribles, reacoes, intercep, marcacao, saltos, forca, agressividade
+         ){
+            this.nome = nome, 
+            this.time = time,
+            this.idade = idade,
+            this.aceleracao = aceleracao,
+            this.velocidade = velocidade,
+            this.finalização = finalização,
+            this.forca_chute = forca_chute,
+            this.chute_longo = chute_longo,
+            this.penaltis = penaltis,
+            this.visao = visao,
+            this.cruzamentos = cruzamentos,
+            this.agilidade =agilidade,
+            this.equilibrio = equilibrio,
+            this.dribles = dribles,
+            this.reacoes = reacoes,
+            this.intercep = intercep,
+            this.marcacao = marcacao,
+            this.saltos = saltos,
+            this.forca = forca,
+            this.agressividade = agressividade
+       }
+       var jogadores =[{}]
+
+      for( var i =0; i < 5; i++){ 
+   jogadores[i] = new jogador(
+        prompt("digite o nome do jogador"),
+        prompt("digite seu time"),
+        prompt("digite sua idade"),
+        prompt("digite a aceleração"),
+        prompt("digite sua velocidade"),
+        prompt("digite sua finalização"),
+        prompt("digite sua força no chute"),
+        prompt("digite seu chute longo"),
+        prompt("digite o valor do penaltis"),
+        prompt("digite sua visao de jogo"),
+        prompt("digite seu cruzamento"),
+        prompt("digite sua agilidade"),
+        prompt("digite seu equilibrio"),
+        prompt("digite seu drible"),
+        prompt("digite sua reação de bola"),
+        prompt("digite sua interceptação"),
+        prompt("digite sua marcação"),
+        prompt("digite seu salto"),
+        prompt("digite sua força"),
+        prompt("digite sua agressividade")
+        );
+        
+      }
+       
+       console.table(jogadores)
+       
+    </script>
+</body>
+</html>

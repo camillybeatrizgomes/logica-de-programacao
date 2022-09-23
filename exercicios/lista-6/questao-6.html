@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i =0;
+        var sala = [[]]
+        while(pergunta = "s"){
+            var pergunta = prompt("há mais alguém na sala? s/n")
+            if(pergunta == 's'){
+            var nome = prompt("Digite o nome do aluno")
+            var matricula = prompt("Digite a sua matricula");
+            }else{break;}
+            sala[i] = [nome, matricula] 
+            sala.sort();  i++
+            
+        }
+            for(var j=0; j < sala.length; j++){
+                document.write("Nome: "+sala[j][0]+
+               " | Matricula: "+sala[j][1]+"<br><br>")
+            }
+            document.write("Alunos presentes: "+(i))
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var jogo = []
+       do{
+        var personagem = prompt("Criar mais um personagem? s-sim n-não");
+        if (personagem =="s"){
+            var nome = prompt("digite o nome do seu personagem")
+            var forca = parseInt(prompt("digite a força de -3 a +3"))
+            var destreza = parseInt(prompt("digite a destreza de -3 a +3"))
+            var agil = parseInt(prompt("digite a sua agilidade de -3 a +3"))
+            var inteligencia = parseInt(prompt("digite sua inteligência de -3 a +3"))
+            var percepcao = parseInt(prompt("digite a sua percepção de -3 a +3"))
+            jogo.push([nome,forca,destreza,agil,inteligencia,percepcao])
+        }
+    }while(personagem != 'n')
+        for(var i = 0; i<jogo.length;i++){
+            document.write("Nome: "+jogo[i][0]+'<br>')
+            document.write("Força: "+jogo[i][1]+'<br>')
+            document.write("Destreza: "+jogo[i][2]+'<br>')
+            document.write("Agilidade: "+jogo[i][3]+'<br>')
+            document.write("Inteligência: "+jogo[i][4]+'<br>')
+            document.write("Percepção: "+jogo[i][5]+'<br>')
+        }
+    
+       console.log(jogo)
+    </script>
+</body>
+</html>
