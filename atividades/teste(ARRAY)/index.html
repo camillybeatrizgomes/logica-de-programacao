@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero = [2,3,8,1,9]
+        /* numero.push(5) - Para adicionar mais um número ao vetor.
+        console.log("A ordem do vetor é ",(numero.sort())) - Para colocar os números do vetor em ordem crescente.
+        console.log("O vetor tem",(numero.length)) - Para saber a quantidade de números no vetor.
+        console.log("O número 8 está na posição ",(numero.indexOf(8))) - Para identificar o número que está no vetor e sua posição/**/
+
+        var contador = 0;
+        for (var contador in numero){
+            document.write("A posição "+(contador)+" tem o número "+(numero[contador]))
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>

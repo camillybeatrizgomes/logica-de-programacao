@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pessoas = [
+            ["Camilly",19,1.500],
+            ["Laís",12,1.200],
+            ["Viviane",41,1.000],
+            ["Mirian",61,1.700]
+        ]
+        var nome = prompt("digite o nome procurado")
+       for(var i = 0;i < pessoas.length;i++){
+         var indice = pessoas[i].indexOf(nome)
+         if(indice != -1){
+            var salario = parseFloat(prompt("digite o novo salario"))
+            pessoas[i][2]=salario
+         }
+         console.log(pessoas)
+       }
+       
+    </script>
+</body>
+</html>
