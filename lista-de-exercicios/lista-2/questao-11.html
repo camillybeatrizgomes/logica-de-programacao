@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var angulo1 = parseInt(prompt("Digite o valor do 1º ângulo de um triângulo: "))
+        var angulo2 = parseInt(prompt("Digite o valor do 2º ângulo de um triângulo: "))
+        var angulo3 = parseInt(prompt("Digite o valor do 3º ângulo de um triângulo: "))
+
+        if (angulo1 + angulo2 + angulo3 === 180) {
+        if(angulo1 == 90 || angulo2 == 90 || angulo3 == 90){
+            document.write("É um triângulo retângulo")
+        } else if (angulo2 > 90 || angulo2 > 90 || angulo3 > 90){
+            document.write("É um triângulo obtusângulo")
+        } else {
+            document.write("É um triângulo acutângulo")
+        }
+        }  else {
+            document.write("Os ângulos não formam um triângulo válido.");
+        }
+    </script>
+</body>
+</html>

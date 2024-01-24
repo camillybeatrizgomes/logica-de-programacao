@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal {
+            constructor(especie, raca, nome, idade, tutor, endereco, ultimaConsulta) {
+                this.especie = especie;
+                this.raca = raca;
+                this.nome = nome;
+                this.idade = idade;
+                this.tutor = tutor;
+                this.endereco = endereco;
+                this.ultimaConsulta = ultimaConsulta;
+            }
+            somQueProduz() {
+                // Associe cada espécie a um arquivo de áudio correspondente
+                const sons = {
+                    "Cachorro": "../questao-10/cao.wav",
+                    "Gato": "../questao-10/gato.wav",
+                    "Papagaio": "../questao-10/papagaio.wav",
+                    "Burro": "../questao-10/burro.wav"
+                };
+                // Obtém o nome do arquivo de áudio correspondente à espécie do animal
+                const nomeArquivo = sons[this.especie];
+
+                if (nomeArquivo) {
+                    document.write(`Reproduzindo som do(a) ${this.especie} - ${this.nome}`);
+                    // Importar e reproduzir o áudio
+                    const audioElement = new Audio(nomeArquivo);
+                    audioElement.play();
+                } else {
+                    document.write(`Não há som registrado para a espécie ${this.especie}`);
+                }
+            }
+        }
+
+        // Função chamada ao clicar no botão
+        function reproduzirSom() {
+            // Solicitar valores ao usuário
+            const especie = prompt("Digite a espécie do animal:");
+            const raca = prompt("Digite a raça do animal:");
+            const nome = prompt("Digite o nome do animal:");
+            const idade = parseInt(prompt("Digite a idade do animal:"));
+            const tutor = prompt("Digite o nome do tutor do animal:");
+            const endereco = prompt("Digite o endereço do animal:");
+            const ultimaConsulta = prompt("Digite a data da última consulta do animal:");
+
+            // Criar instância da classe Animal com os valores fornecidos pelo usuário
+            const animalUsuario = new Animal(especie, raca, nome, idade, tutor, endereco, ultimaConsulta);
+
+            // Chamar o método somQueProduz para o animal do usuário
+            animalUsuario.somQueProduz();
+            document.write(`<br>Espécie: ${especie}<br>Raça: ${raca}<br>Nome do Animal: ${nome}<br>Nome do tutor: ${tutor}<br>Endereço: ${endereco}<br>Última consulta: ${ultimaConsulta}`)
+        }
+    </script>
+
+    <!-- Adicionando um botão para reproduzir som -->
+    <button onclick="reproduzirSom()">Reproduzir Som</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var codigo = prompt("Digite 1 para álcool ou 2 para gasolina")
+        var litros = parseFloat(prompt("Digite a quantidade de listros desejada: "))
+
+        if (codigo == 2){
+                var valorAPagar = 4.19 * litros
+                document.write(`Combustivel escolhido: Gasolina - R$4,19<br>Quantidade de litros: ${litros}L<br>Valor a pagar: R$ ${valorAPagar.toFixed(2)}`)
+
+        } else if (codigo == 1) {
+            var valorAPagar = 3.16 * litros
+                document.write(`Combustivel escolhido: Alcool - R$3,16<br>Quantidade de litros: ${litros}L<br>Valor a pagar: R$ ${valorAPagar.toFixed(2)}`)
+        }
+    </script>
+</body>
+</html>

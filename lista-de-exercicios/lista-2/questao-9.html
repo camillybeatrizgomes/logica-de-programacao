@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+        </head>
+    <script>
+        var codigo = prompt("Digite o código do produto: ")
+        var preco = parseFloat(prompt("Digite o preço do produto: "))
+        if (codigo <= 2){
+            valor =((preco * 80) / 100) + preco
+            lucro = (preco * 80) / 100
+            document.write("Valor: R$", valor.toFixed(2))
+            document.write('<br>')
+            document.write("Lucro: R$", lucro)
+        } else if (codigo <= 4){
+                valor=((preco * 100) / 100) + preco
+                lucro = (preco * 100) / 100
+                document.write("Valor: R$", valor.toFixed(2))
+                document.write('<br>')
+                document.write("Lucro: R$", lucro)
+        } else {
+                valor=((preco * 90) / 100)
+                lucro=(preco * 90) / 100
+                document.write("Valor: R$", valor.toFixed(2))
+                document.write('<br>')
+                document.write("Lucro: R$", lucro)
+        }
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var precoDoPao = 0.12
+        var precoDaBroa = 1.50
+
+        var pao = parseInt(prompt("Digite a quantidade de pão desejado: "))
+        var broa = parseInt(prompt("Digite a quantidade de broa desejada: "))
+
+        var valorTotal = (pao * precoDoPao) + (broa * precoDaBroa)
+        var valorGuardadoNaConta = valorTotal * 0.10
+
+        document.write(`Total arrecadado: R$ ${valorTotal.toFixed(2)} <br>Valor a ser guardado na poupança: R$ ${valorGuardadoNaConta.toFixed(2)}`)
+
+    </script>
+</body>
+</html>

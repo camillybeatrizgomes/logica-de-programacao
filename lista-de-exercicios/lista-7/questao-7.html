@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var contador =0;
+        var personagens = [{}];
+        function atributos(
+            nome,
+            forca,
+            destreza,
+            agilidade,
+            inteligencia,
+            percepcao )
+        {
+        this.nome = nome, 
+        this.forca = forca,
+        this.destreza = destreza,
+        this.agilidade = agilidade,
+        this.inteligencia = inteligencia,
+        this.percepcao = percepcao;
+        }
+        
+        while(pergunta != 'n'){
+            var pergunta = prompt("quer criar novo personagem s/n")
+            if(pergunta =='s'){
+                personagens[contador] = new atributos(
+                    prompt("Digite o nome do personagem: "),
+                    prompt("Digite a força do personagem: de -3 até +3"),
+                    prompt("Digite a destreza do personagem: de -3 até +3"),
+                    prompt("Digite a agilidade do personagem: de -3 até +3"),
+                    prompt("Digite a inteligencia do personagem: de -3 até +3"),
+                    prompt("Digite a percepção do personagem: de -3 até +3"),
+                    )
+                }
+                contador++
+            }
+            console.table(personagens)
+    </script>
+</body>
+</html>

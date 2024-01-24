@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var caixa = {}
+
+         caixa.compra = {
+              datatual: prompt("Digite a data da compra: "),
+              horatual: prompt("Digite a hora da compra: "),
+              valortotal: 120,
+              quantidade: 25,
+              produtos: ['açúcar', 'feijão', 'arroz','queijo','bife'],
+              valorProdutos: [2.88, 4.32, 3.23, 8.20, 21.99]
+         } 
+            console.log(caixa.compra.datatual) 
+            console.log(caixa.compra.horatual) 
+            console.log("valor das compras: "+ caixa.compra.valortotal) 
+            console.log("quantidade da compra: "+ caixa.compra.quantidade)
+
+            caixa.compra.produtos.push(prompt("Digite outro produto"));
+            caixa.compra.quantidade = parseInt(prompt("Quantidade desse produto")) + caixa.compra.quantidade
+            caixa.compra.valorProdutos.push(parseFloat(prompt("Digite o valor do produto")))
+            caixa.compra.valortotal =  caixa.compra.valortotal + caixa.compra.valorProdutos[5] 
+           
+            console.log("valor das compras: "+caixa.compra.valortotal);
+            console.log("Quantidade da compra: "+caixa.compra.quantidade);
+
+    </script>     
+</body>
+</html>

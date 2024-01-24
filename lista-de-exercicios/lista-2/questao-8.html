@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+        </head>
+        <script>
+            var plano = prompt("Digite um plano A, B ou C")
+            var salario = parseFloat(prompt("Digite o seu salário"))
+            if (plano =='a'){
+                var valor = salario * 0.10 + parseFloat (salario)
+                document.write("Seu novo salário: R$ ", valor)
+            }else if(plano =='b'){
+                var valor = salario * 0.15 + parseFloat (salario)
+                document.write("Seu novo salário: R$ ", valor)
+            }else if (plano =='c'){
+                var valor = salario * 0.20 + parseFloat (salario)
+                document.write("Seu novo salário: R$ ", valor)
+            }
+        </script>
+    </body>
+</html>

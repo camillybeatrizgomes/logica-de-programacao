@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function saudacao(t, n){
+            if(t == "Manhã"){
+                document.write(`Bom dia, ${nome}!`)
+            } else if (t == "Tarde"){
+                document.write(`Boa tarde, ${nome}!`)
+            } else if (t == "Noite"){
+                document.write(`Boa noite, ${nome}`)
+            }
+        }
+
+        var nome = prompt("Digite seu nome: ")
+        var turno = prompt("Digite se for manhã, tarde ou noite: ")
+        let arrayNomes = [nome];
+        let arrayTurnos = [turno];
+        saudacao(arrayTurnos, arrayNomes)
+
+        console.log(arrayNomes, arrayTurnos)
+    </script>
+</body>
+</html>

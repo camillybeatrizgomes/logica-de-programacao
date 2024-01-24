@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var faixa1 = 0;
+            var faixa2 = 0;
+            var faixa3 = 0;
+            var faixa4 = 0;
+            var faixa5 = 0;
+            do{
+                var idade = parseInt(prompt("Digite a sua idade: "))
+                if (idade >= 0 && idade <= 5){
+                    faixa1++
+                } else if (idade >= 6 && idade <= 13){
+                faixa2++
+                } else if (idade >= 14 && idade <= 17){
+                    faixa3++
+                } else if (idade >= 18 && idade <= 59){
+                    faixa4++
+                } else if (idade >= 60){
+                    faixa5++
+                }
+                } while (idade > 0)
+                document.write ("Faixa etaria 1º existem: ",faixa1)
+                document.write ('<br>')
+                document.write ("Faixa etaria 2º existem: ",faixa2)
+                document.write ('<br>')
+                document.write ("Faixa etaria 3º existem: ",faixa3)
+                document.write ('<br>')
+                document.write ("Faixa etaria 4º existem: ",faixa4)
+                document.write ('<br>')
+                document.write ("Faixa etaria 5º existem: ",faixa5)
+                document.write ('<br>')
+            
+    </script>
+</body>
+</html>

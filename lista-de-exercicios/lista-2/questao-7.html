@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vendaDoCorretor1 = parseFloat(prompt("Digite o valor da venda do corretor 1: "))
+        var vendaDoCorretor2 = parseFloat(prompt("Digite o valor da venda do corretor 2: "))
+        var vendaDoCorretor3 = parseFloat(prompt("Digite o valor da venda do corretor 3: "))
+
+        if(vendaDoCorretor1 > 50000.00){
+            comissaoVendaDoCorretor1 = vendaDoCorretor1 * 0.12
+        } else if (vendaDoCorretor1 >= 30000.00) {
+            comissaoVendaDoCorretor1 = vendaDoCorretor1 * 0.095
+        } else {
+            comissaoVendaDoCorretor1 = vendaDoCorretor1 * 0.07
+        }
+
+        if(vendaDoCorretor2 > 50000.00){
+            comissaoVendaDoCorretor2 = vendaDoCorretor2 * 0.12
+        } else if(vendaDoCorretor2 >= 30000.00){
+            comissaoVendaDoCorretor2 = vendaDoCorretor2 * 0.095
+        } else {
+            comissaoVendaDoCorretor2 = vendaDoCorretor2 * 0.07
+        }
+
+        if(vendaDoCorretor3 > 50000.00){
+            comissaoVendaDoCorretor3 = vendaDoCorretor3 * 0.12
+        } else if(vendaDoCorretor3 >= 30000.00){
+            comissaoVendaDoCorretor3 = vendaDoCorretor3 * 0.095
+        } else {
+            comissaoVendaDoCorretor3 = vendaDoCorretor3 * 0.07
+        }
+
+        var valorTotal = vendaDoCorretor1 + vendaDoCorretor2 + vendaDoCorretor3
+
+        document.write(`Corretor 1: ${vendaDoCorretor1.toFixed(2)} | Comissão: ${comissaoVendaDoCorretor1}<br>Corretor 2: ${vendaDoCorretor2.toFixed(2)} | Comissão: ${comissaoVendaDoCorretor2.toFixed(2)}<br>Corretor 3: ${vendaDoCorretor3.toFixed(2)} | Comissão: ${comissaoVendaDoCorretor3.toFixed(2)}<br>Total de vendas da empresa: ${valorTotal.toFixed(2)}`)
+    </script>
+</body>
+</html>

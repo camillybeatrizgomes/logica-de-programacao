@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Construtor de objeto para representar jogadores do FIFA 21
+        function Player(nome, time, idade, aceleracao, velocidade, finalizacao, forcaChute, chutesLongos, penaltis, visao, cruzamentos, agilidade, equilibrio, dribles, reacoes, interceptacoes, marcacao, saltos, forca, agressividade) {
+            this.nome = nome;
+            this.time = time;
+            this.idade = idade;
+            this.aceleracao = aceleracao;
+            this.velocidade = velocidade;
+            this.finalizacao = finalizacao;
+            this.forcaChute = forcaChute;
+            this.chutesLongos = chutesLongos;
+            this.penaltis = penaltis;
+            this.visao = visao;
+            this.cruzamentos = cruzamentos;
+            this.agilidade = agilidade;
+            this.equilibrio = equilibrio;
+            this.dribles = dribles;
+            this.reacoes = reacoes;
+            this.interceptacoes = interceptacoes;
+            this.marcacao = marcacao;
+            this.saltos = saltos;
+            this.forca = forca;
+            this.agressividade = agressividade;
+        }
+
+        // Criar objetos para os jogadores
+        var suarez = new Player('Suárez', 'Barcelona', 35, 88, 77, 94, 87, 86, 85, 84, 77, 86, 60, 86, 93, 41, 30, 69, 80, 18);
+        var pogba = new Player('Pogba', 'Manchester United', 29, 71, 78, 73, 90, 81, 81, 87, 80, 74, 64, 87, 81, 68, 67, 85, 89, 78);
+
+        // Colocar os objetos em um array chamado players
+        var players = [suarez, pogba];
+
+        // Exibir informações dos jogadores no console (pode ser removido ou substituído conforme necessário)
+        players.forEach(function(player) {
+            console.log(player);
+        });
+    </script>
+</body>
+</html>

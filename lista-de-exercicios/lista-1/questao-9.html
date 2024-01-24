@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tempoTotalEmSegundos = parseInt(prompt("Digite o tempo de duração do evento na fábrica: "));
+        var horasEmSegundos = 3600;
+        var minutosEmSegundos = 60;
+
+        var horas = tempoTotalEmSegundos / horasEmSegundos;
+        var minutos = (tempoTotalEmSegundos % horasEmSegundos) / minutosEmSegundos;
+        var segundos = tempoTotalEmSegundos % minutosEmSegundos;
+
+        horas = horas > 12 ? 12 : horas;
+        document.write(`Tempo de duração: ${horas} em horas, ${minutos} minutos e ${segundos} segundos.`);
+    </script>
+</body>
+</html>

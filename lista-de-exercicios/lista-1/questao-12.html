@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var quantidadeDeBoloEmKg = parseFloat(prompt("Digite a quantidade de bolo de fubá em Kg que deseja: "))
+        var custoDosIngredientesEmKg = 5.14;
+        var custoDeMaoDeObraPorKg = 4.86;
+
+        var custoTotalPorKg = custoDosIngredientesEmKg + custoDeMaoDeObraPorKg;
+        var custoTotal = custoTotalPorKg * quantidadeDeBoloEmKg;
+        document.write(`Custo total da produção de ${quantidadeDeBoloEmKg}Kg de bolo de fubá: R$ ${custoTotal.toFixed(2)}`)
+    </script>
+</body>
+</html>
